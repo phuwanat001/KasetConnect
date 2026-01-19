@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Project Rework and System Redevelopment
 
-## Getting Started
+โครงงานนี้เป็นการ ปรับปรุงและพัฒนาระบบใหม่ (Rework & Redevelopment) โดยอ้างอิงจากโครงงานเดิมที่มีอยู่
+มิใช่การว่าจ้างบุคคลภายนอกเพื่อพัฒนาโครงงานแต่อย่างใด
 
-First, run the development server:
+การดำเนินงานทั้งหมดเป็นการพัฒนาด้วยตนเอง ตั้งแต่การออกแบบโครงสร้างระบบ การเลือกใช้เทคโนโลยี การเขียนโค้ด ไปจนถึงการทดสอบและแก้ไขข้อผิดพลาด
+โดยมีการใช้ AI ในฐานะเครื่องมือช่วยสนับสนุนการพัฒนา (Development Tools) เช่น การช่วยวิเคราะห์แนวทาง แนะนำโครงสร้าง หรือช่วยตรวจสอบข้อผิดพลาดเท่านั้น
+ไม่ใช่การให้ AI พัฒนาโครงงานแทนผู้จัดทำ
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+เพื่อแสดงถึงกระบวนการทำงานจริง จึงได้มีการ เก็บประวัติ Commit ไว้อย่างครบถ้วน
+สามารถตรวจสอบลำดับขั้นตอนการพัฒนา ความต่อเนื่องของงาน และการปรับปรุงในแต่ละช่วงเวลาได้อย่างชัดเจน
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ที่มาและเหตุผลของการพัฒนาใหม่
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ระบบเดิมพัฒนาด้วยเทคโนโลยีดังต่อไปนี้
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Vite
 
-## Learn More
+React
 
-To learn more about Next.js, take a look at the following resources:
+Express
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+MongoDB
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ภายหลังได้มีการ ออกแบบและพัฒนาระบบใหม่ทั้งหมด โดยปรับเปลี่ยนมาใช้เทคโนโลยีดังนี้
 
-## Deploy on Vercel
+Next.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MongoDB
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+การปรับเปลี่ยนดังกล่าวมีวัตถุประสงค์เพื่อ
+
+ปรับโครงสร้างระบบให้มีความเป็นระเบียบและเป็นมาตรฐานมากขึ้น
+
+รวมการจัดการ Frontend และ Backend ให้อยู่ในสภาพแวดล้อมเดียวกัน
+
+รองรับการพัฒนาและขยายระบบในระยะยาว
+
+เพิ่มความเข้าใจในสถาปัตยกรรมระบบสมัยใหม่ของผู้จัดทำโครงงาน
+
+ขอบเขตความรับผิดชอบของผู้จัดทำ
+
+โครงงานนี้จัดทำขึ้นโดยผู้จัดทำเพียงผู้เดียว
+
+ไม่มีการคัดลอกผลงานของผู้อื่น
+
+ไม่มีการว่าจ้างบุคคลภายนอก
+
+ทุกส่วนของโค้ดผ่านการศึกษา ทำความเข้าใจ และปรับปรุงด้วยตนเอง
+
+หากมีข้อสงสัยเกี่ยวกับกระบวนการพัฒนา สามารถพิจารณาได้จากประวัติ Commit ใน Repository นี้ ซึ่งแสดงขั้นตอนการทำงานอย่างต่อเนื่องและตรวจสอบได้
