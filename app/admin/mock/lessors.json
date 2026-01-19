@@ -1,0 +1,93 @@
+{
+  "summary": {
+    "pending": 2,
+    "active": 14,
+    "suspended": 1,
+    "_mark": "replace_with_real_api"
+  },
+  "items": [
+    {
+      "id": "LSR001",
+      "business_name": "AgriThai Co., Ltd.",
+      "contact_person": "สมศักดิ์ เกษตรไทย",
+      "email": "contact@agrithai.co.th",
+      "phone": "02-123-4567",
+      "equipment_count": 15,
+      "rating": 4.8,
+      "total_rentals": 124,
+      "status": "approved",
+      "verified_at": "2024-01-15",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "LSR002",
+      "business_name": "TechFarm Solutions",
+      "contact_person": "อนันต์ เทคโนโลยี",
+      "email": "info@techfarm.co.th",
+      "phone": "02-234-5678",
+      "equipment_count": 8,
+      "rating": 4.5,
+      "total_rentals": 67,
+      "status": "approved",
+      "verified_at": "2024-02-01",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "LSR003",
+      "business_name": "FarmPro Equipment",
+      "contact_person": "ประเสริฐ ฟาร์ม",
+      "email": "sales@farmpro.com",
+      "phone": "02-345-6789",
+      "equipment_count": 22,
+      "rating": 4.9,
+      "total_rentals": 201,
+      "status": "approved",
+      "verified_at": "2023-12-10",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "LSR004",
+      "business_name": "ห้างหุ้นส่วนจำกัด เครื่องจักรเกษตร",
+      "contact_person": "สมหมาย เครื่องจักร",
+      "email": "sommai@agrimachine.co.th",
+      "phone": "043-111-2222",
+      "equipment_count": 5,
+      "rating": 0,
+      "total_rentals": 0,
+      "status": "pending",
+      "applied_at": "2024-10-18",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "LSR005",
+      "business_name": "นายวิรัตน์ เกษตรกรรม",
+      "contact_person": "วิรัตน์ ทองดี",
+      "email": "wirat@gmail.com",
+      "phone": "089-333-4444",
+      "equipment_count": 3,
+      "rating": 0,
+      "total_rentals": 0,
+      "status": "pending",
+      "applied_at": "2024-10-20",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "LSR006",
+      "business_name": "GreenAgri Rental",
+      "contact_person": "ชาญชัย กรีน",
+      "email": "green@greenagri.com",
+      "phone": "02-456-7890",
+      "equipment_count": 10,
+      "rating": 2.1,
+      "total_rentals": 15,
+      "status": "suspended",
+      "suspended_reason": "รีวิวลูกค้าเชิงลบหลายครั้ง",
+      "suspended_at": "2024-09-15",
+      "_mark": "replace_with_real_api"
+    }
+  ],
+  "_meta": {
+    "endpoint": "/api/admin/lessors",
+    "_mark": "replace_with_real_api"
+  }
+}

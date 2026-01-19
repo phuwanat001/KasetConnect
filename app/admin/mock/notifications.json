@@ -1,0 +1,57 @@
+{
+  "unread_count": 3,
+  "items": [
+    {
+      "id": "NTF001",
+      "title": "แจ้งปิดปรับปรุงระบบ",
+      "message": "ระบบจะปิดปรับปรุงในวันที่ 25 ต.ค. 2567 เวลา 02:00-06:00 น.",
+      "target": "all",
+      "target_label": "ผู้ใช้ทั้งหมด",
+      "channels": ["in_app", "email"],
+      "date": "2024-10-20",
+      "status": "sent",
+      "sent_count": 1245,
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "NTF002",
+      "title": "โปรโมชั่นลดค่าเช่า 10%",
+      "message": "พิเศษ! ลดค่าเช่าเครื่องจักร 10% สำหรับการเช่าครั้งแรก",
+      "target": "renters",
+      "target_label": "ผู้เช่าเท่านั้น",
+      "channels": ["in_app"],
+      "date": "2024-10-18",
+      "status": "sent",
+      "sent_count": 892,
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "NTF003",
+      "title": "อัพเดทนโยบายการให้เช่า",
+      "message": "มีการปรับปรุงข้อกำหนดและเงื่อนไขการให้เช่าใหม่ กรุณาตรวจสอบ",
+      "target": "lessors",
+      "target_label": "ผู้ให้เช่าเท่านั้น",
+      "channels": ["in_app", "email"],
+      "date": "2024-10-15",
+      "status": "sent",
+      "sent_count": 17,
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "NTF004",
+      "title": "ยินดีต้อนรับสู่ KasetConnect",
+      "message": "ขอบคุณที่ลงทะเบียนกับเรา เริ่มต้นค้นหาเครื่องจักรการเกษตรได้เลย!",
+      "target": "renters",
+      "target_label": "ผู้เช่าใหม่",
+      "channels": ["in_app"],
+      "date": "2024-10-10",
+      "status": "sent",
+      "sent_count": 156,
+      "_mark": "replace_with_real_api"
+    }
+  ],
+  "_meta": {
+    "endpoint": "/api/admin/notifications",
+    "_mark": "replace_with_real_api"
+  }
+}

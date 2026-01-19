@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "id": "CAT001",
+      "name": "รถแทรกเตอร์",
+      "name_en": "Tractors",
+      "icon": "fa-tractor",
+      "status": "active",
+      "equipment_count": 45,
+      "created_at": "2024-01-15",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "CAT002",
+      "name": "โดรนการเกษตร",
+      "name_en": "Agricultural Drones",
+      "icon": "fa-helicopter",
+      "status": "active",
+      "equipment_count": 28,
+      "created_at": "2024-01-20",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "CAT003",
+      "name": "รถเกี่ยวข้าว",
+      "name_en": "Harvesters",
+      "icon": "fa-wheat-awn",
+      "status": "active",
+      "equipment_count": 32,
+      "created_at": "2024-02-01",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "CAT004",
+      "name": "ระบบชลประทาน",
+      "name_en": "Irrigation Systems",
+      "icon": "fa-droplet",
+      "status": "active",
+      "equipment_count": 18,
+      "created_at": "2024-02-10",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "CAT005",
+      "name": "เครื่องพ่นยา",
+      "name_en": "Sprayers",
+      "icon": "fa-spray-can",
+      "status": "inactive",
+      "equipment_count": 12,
+      "created_at": "2024-02-15",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "CAT006",
+      "name": "รถขุด",
+      "name_en": "Excavators",
+      "icon": "fa-truck-monster",
+      "status": "active",
+      "equipment_count": 22,
+      "created_at": "2024-03-01",
+      "_mark": "replace_with_real_api"
+    }
+  ],
+  "_meta": {
+    "endpoint": "/api/admin/categories",
+    "_mark": "replace_with_real_api"
+  }
+}

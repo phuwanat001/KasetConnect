@@ -1,0 +1,53 @@
+{
+  "system_status": "operational",
+  "last_updated": "2024-10-20T14:30:00Z",
+  "settings": {
+    "smart_recommendation": {
+      "enabled": true,
+      "description": "จับคู่ผู้เช่ากับเครื่องจักรตามพิกัดและประวัติ",
+      "_mark": "replace_with_real_api"
+    },
+    "chatbot_assistant": {
+      "enabled": true,
+      "description": "ตอบคำถามพื้นฐานอัตโนมัติ",
+      "_mark": "replace_with_real_api"
+    },
+    "price_optimization": {
+      "enabled": false,
+      "description": "แนะนำราคาเช่าที่เหมาะสมตามตลาด",
+      "_mark": "replace_with_real_api"
+    },
+    "fraud_detection": {
+      "enabled": true,
+      "description": "ตรวจจับพฤติกรรมน่าสงสัย",
+      "_mark": "replace_with_real_api"
+    }
+  },
+  "usage_today": {
+    "matches": {
+      "value": 1240,
+      "percentage": 70,
+      "label": "การจับคู่สำเร็จ"
+    },
+    "chat_responses": {
+      "value": 45,
+      "percentage": 45,
+      "label": "การตอบแชทอัตโนมัติ"
+    },
+    "fraud_alerts": {
+      "value": 2,
+      "percentage": 5,
+      "label": "การแจ้งเตือนพฤติกรรมน่าสงสัย"
+    }
+  },
+  "model_info": {
+    "recommendation_model": "KasetMatch v2.1",
+    "chatbot_model": "KasetBot v1.5",
+    "last_trained": "2024-10-15",
+    "_mark": "replace_with_real_api"
+  },
+  "_meta": {
+    "endpoint": "/api/admin/ai",
+    "_mark": "replace_with_real_api"
+  }
+}

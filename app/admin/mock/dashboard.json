@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "rentals_today": 24,
+    "active_rentals": 156,
+    "pending_lessors": 2,
+    "total_revenue": "฿1,245,000",
+    "_mark": "replace_with_real_api"
+  },
+  "activity_chart": {
+    "labels": ["จ", "อ", "พ", "พฤ", "ศ", "ส", "อา"],
+    "data": [40, 60, 30, 80, 95, 50, 60],
+    "_mark": "replace_with_real_api"
+  },
+  "upcoming_pickups": [
+    {
+      "id": "PKP001",
+      "month": "ต.ค.",
+      "day": 24,
+      "equipment_name": "Kubota L5018",
+      "lessor_name": "AgriThai Co.",
+      "renter_name": "สมชาย พ.",
+      "color": "blue",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "PKP002",
+      "month": "ต.ค.",
+      "day": 25,
+      "equipment_name": "DJI Agras T20",
+      "lessor_name": "TechFarm",
+      "renter_name": "ฟาร์ม เอ.",
+      "color": "green",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "PKP003",
+      "month": "ต.ค.",
+      "day": 26,
+      "equipment_name": "John Deere 5075E",
+      "lessor_name": "FarmPro Ltd.",
+      "renter_name": "วิชัย ก.",
+      "color": "blue",
+      "_mark": "replace_with_real_api"
+    }
+  ],
+  "_meta": {
+    "endpoint": "/api/admin/dashboard",
+    "_mark": "replace_with_real_api"
+  }
+}

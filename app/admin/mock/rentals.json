@@ -1,0 +1,110 @@
+{
+  "summary": {
+    "all": 245,
+    "pending": 12,
+    "active": 156,
+    "returned": 72,
+    "damaged": 5,
+    "_mark": "replace_with_real_api"
+  },
+  "items": [
+    {
+      "id": "RNT20241001",
+      "equipment_name": "Kubota L5018 Tractor",
+      "equipment_id": "EQP001",
+      "lessor_id": "LSR001",
+      "lessor_name": "AgriThai Co.",
+      "renter_id": "USR001",
+      "renter_name": "สมชาย ใจดี",
+      "start_date": "2024-10-20",
+      "end_date": "2024-10-25",
+      "total_price": 15000,
+      "deposit": 5000,
+      "status": "active",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "RNT20241002",
+      "equipment_name": "DJI Agras T20 Drone",
+      "equipment_id": "EQP008",
+      "lessor_id": "LSR002",
+      "lessor_name": "TechFarm",
+      "renter_id": "USR002",
+      "renter_name": "มาลี สวัสดี",
+      "start_date": "2024-10-22",
+      "end_date": "2024-10-24",
+      "total_price": 8000,
+      "deposit": 3000,
+      "status": "active",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "RNT20241003",
+      "equipment_name": "รถเกี่ยวข้าว Yanmar",
+      "equipment_id": "EQP015",
+      "lessor_id": "LSR003",
+      "lessor_name": "FarmPro Ltd.",
+      "renter_id": "USR005",
+      "renter_name": "ธนากร เจริญพร",
+      "start_date": "2024-10-18",
+      "end_date": "2024-10-20",
+      "total_price": 25000,
+      "deposit": 10000,
+      "status": "returned",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "RNT20241004",
+      "equipment_name": "John Deere 5075E",
+      "equipment_id": "EQP003",
+      "lessor_id": "LSR001",
+      "lessor_name": "AgriThai Co.",
+      "renter_id": "USR006",
+      "renter_name": "รัตนา ศรีสุข",
+      "start_date": "2024-10-25",
+      "end_date": "2024-10-30",
+      "total_price": 20000,
+      "deposit": 8000,
+      "status": "pending",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "RNT20241005",
+      "equipment_name": "เครื่องพ่นยา Honda",
+      "equipment_id": "EQP022",
+      "lessor_id": "LSR003",
+      "lessor_name": "FarmPro Ltd.",
+      "renter_id": "USR003",
+      "renter_name": "วิชัย กล้าหาญ",
+      "start_date": "2024-10-10",
+      "end_date": "2024-10-12",
+      "total_price": 3000,
+      "deposit": 1000,
+      "status": "damaged",
+      "damage_note": "ท่อพ่นยาแตก ต้องซ่อมแซม",
+      "_mark": "replace_with_real_api"
+    },
+    {
+      "id": "RNT20241006",
+      "equipment_name": "ระบบน้ำหยด Netafim",
+      "equipment_id": "EQP030",
+      "lessor_id": "LSR002",
+      "lessor_name": "TechFarm",
+      "renter_id": "USR001",
+      "renter_name": "สมชาย ใจดี",
+      "start_date": "2024-10-15",
+      "end_date": "2024-11-15",
+      "total_price": 12000,
+      "deposit": 4000,
+      "status": "active",
+      "_mark": "replace_with_real_api"
+    }
+  ],
+  "_meta": {
+    "total": 6,
+    "page": 1,
+    "per_page": 10,
+    "endpoint": "/api/admin/rentals",
+    "_mark": "replace_with_real_api"
+  }
+}

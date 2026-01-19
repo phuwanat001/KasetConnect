@@ -2,18 +2,14 @@ import type { Metadata } from "next";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "KasetConnect",
-  description: "Connect with Kasetsart University community ",
+  title: "KasetConnect - ระบบจัดการหลังบ้าน",
+  description: "ระบบจัดการหลังบ้าน KasetConnect สำหรับผู้ดูแลระบบ",
 };
 
-export default function RootLayout({
+export default function AdminRootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
+  return children;
 }

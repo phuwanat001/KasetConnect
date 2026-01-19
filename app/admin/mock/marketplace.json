@@ -1,0 +1,136 @@
+{
+  "summary": {
+    "total": 156,
+    "available": 89,
+    "rented": 52,
+    "maintenance": 15
+  },
+  "items": [
+    {
+      "id": "MKT001",
+      "name": "รถแทรกเตอร์ John Deere 5050D",
+      "description": "รถแทรกเตอร์ขนาดกลาง เหมาะสำหรับงานไถ หว่าน และขนส่งในไร่นา สภาพดีมาก พร้อมใช้งาน",
+      "category": "รถแทรกเตอร์",
+      "price_per_day": 2500,
+      "lessor_id": "L001",
+      "lessor_name": "ฟาร์มสุขใจ",
+      "location": "นครราชสีมา",
+      "rating": 4.8,
+      "total_reviews": 45,
+      "images": ["tractor1.jpg", "tractor2.jpg"],
+      "status": "available",
+      "created_at": "2025-10-15",
+      "specifications": {
+        "brand": "John Deere",
+        "model": "5050D",
+        "year": 2022,
+        "condition": "ดีมาก"
+      }
+    },
+    {
+      "id": "MKT002",
+      "name": "เครื่องเกี่ยวข้าว Kubota DC70",
+      "description": "เครื่องเกี่ยวข้าวขนาดใหญ่ ทำงานได้รวดเร็ว เหมาะสำหรับนาข้าวขนาดใหญ่ มีระบบทำความสะอาดข้าว",
+      "category": "เครื่องเกี่ยวข้าว",
+      "price_per_day": 4500,
+      "lessor_id": "L002",
+      "lessor_name": "เกษตรพัฒนา",
+      "location": "ขอนแก่น",
+      "rating": 4.6,
+      "total_reviews": 32,
+      "images": ["harvester1.jpg"],
+      "status": "rented",
+      "created_at": "2025-09-20",
+      "specifications": {
+        "brand": "Kubota",
+        "model": "DC70",
+        "year": 2021,
+        "condition": "ดี"
+      }
+    },
+    {
+      "id": "MKT003",
+      "name": "โดรนพ่นยา DJI Agras T40",
+      "description": "โดรนพ่นยาและปุ๋ยอัจฉริยะ บินอัตโนมัติ ครอบคลุมพื้นที่กว้าง ประหยัดน้ำและสารเคมี",
+      "category": "โดรนเกษตร",
+      "price_per_day": 3500,
+      "lessor_id": "L003",
+      "lessor_name": "ไฮเทคฟาร์ม",
+      "location": "เชียงใหม่",
+      "rating": 4.9,
+      "total_reviews": 28,
+      "images": ["drone1.jpg", "drone2.jpg", "drone3.jpg"],
+      "status": "available",
+      "created_at": "2025-11-05",
+      "specifications": {
+        "brand": "DJI",
+        "model": "Agras T40",
+        "year": 2024,
+        "condition": "ใหม่"
+      }
+    },
+    {
+      "id": "MKT004",
+      "name": "รถขุดขนาดเล็ก Komatsu PC30",
+      "description": "รถขุดขนาดเล็ก เหมาะสำหรับงานขุดบ่อ ปรับพื้นที่ และงานก่อสร้างในฟาร์ม",
+      "category": "รถขุด",
+      "price_per_day": 3000,
+      "lessor_id": "L001",
+      "lessor_name": "ฟาร์มสุขใจ",
+      "location": "นครราชสีมา",
+      "rating": 4.5,
+      "total_reviews": 18,
+      "images": ["excavator1.jpg"],
+      "status": "maintenance",
+      "created_at": "2025-08-10",
+      "specifications": {
+        "brand": "Komatsu",
+        "model": "PC30",
+        "year": 2020,
+        "condition": "ซ่อมบำรุง"
+      }
+    },
+    {
+      "id": "MKT005",
+      "name": "เครื่องสูบน้ำ Honda WB30XT",
+      "description": "เครื่องสูบน้ำขนาด 3 นิ้ว แรงดันสูง เหมาะสำหรับสูบน้ำเข้าไร่นา และระบบชลประทาน",
+      "category": "ระบบน้ำ",
+      "price_per_day": 500,
+      "lessor_id": "L004",
+      "lessor_name": "อุปกรณ์การเกษตร",
+      "location": "อุดรธานี",
+      "rating": 4.7,
+      "total_reviews": 56,
+      "images": ["pump1.jpg"],
+      "status": "available",
+      "created_at": "2025-07-25",
+      "specifications": {
+        "brand": "Honda",
+        "model": "WB30XT",
+        "year": 2023,
+        "condition": "ดีมาก"
+      }
+    },
+    {
+      "id": "MKT006",
+      "name": "รถบรรทุก 6 ล้อ Isuzu NMR",
+      "description": "รถบรรทุกสำหรับขนส่งผลผลิตทางการเกษตร ปูพื้นกระบะเหล็ก พร้อมผ้าใบคลุม",
+      "category": "รถบรรทุก",
+      "price_per_day": 2000,
+      "lessor_id": "L005",
+      "lessor_name": "ขนส่งเกษตรกร",
+      "location": "สุราษฎร์ธานี",
+      "rating": 4.4,
+      "total_reviews": 22,
+      "images": ["truck1.jpg", "truck2.jpg"],
+      "status": "rented",
+      "created_at": "2025-06-15",
+      "specifications": {
+        "brand": "Isuzu",
+        "model": "NMR",
+        "year": 2019,
+        "condition": "ดี"
+      }
+    }
+  ]
+}
