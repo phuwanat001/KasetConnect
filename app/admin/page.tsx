@@ -10,7 +10,7 @@ import { RentalsView } from "./components/views/RentalsView";
 import { MarketplaceView } from "./components/views/MarketplaceView";
 import { NotificationsView } from "./components/views/NotificationsView";
 import { AiView } from "./components/views/AiView";
-import { LoadingSpinner } from "./components/ui/LoadingSpinner";
+import { AdminSkeleton } from "./components/ui/AdminSkeleton";
 import {
   getDashboardData,
   getCategoriesData,
@@ -53,7 +53,7 @@ export default function AdminPage() {
     setIsLoading(true);
     setCurrentView(view);
     // Simulate loading
-    setTimeout(() => setIsLoading(false), 200);
+    setTimeout(() => setIsLoading(false), 800);
   };
 
   const handleNavigateToRental = (rentalId: string) => {
@@ -63,7 +63,7 @@ export default function AdminPage() {
 
   const renderCurrentView = () => {
     if (isLoading) {
-      return <LoadingSpinner />;
+      return <AdminSkeleton view={currentView} />;
     }
 
     switch (currentView) {
