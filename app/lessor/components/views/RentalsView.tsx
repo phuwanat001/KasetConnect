@@ -17,9 +17,10 @@ import type { RentalsData, Rental } from "../../lib/types";
 
 interface RentalsViewProps {
   data: RentalsData;
+  onViewBooking?: (id: string) => void;
 }
 
-export function RentalsView({ data }: RentalsViewProps) {
+export function RentalsView({ data, onViewBooking }: RentalsViewProps) {
   const [activeTab, setActiveTab] = useState<"active" | "history">("active");
 
   const activeRentals = data.rentals.filter(
@@ -176,7 +177,10 @@ export function RentalsView({ data }: RentalsViewProps) {
                   </div>
 
                   <div className="w-full mt-4 flex justify-end gap-2">
-                    <button className="px-4 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                    <button
+                      onClick={() => onViewBooking?.(rental.bookingId)}
+                      className="px-4 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                    >
                       ดูรายละเอียด
                     </button>
                     {rental.status === "active" && (

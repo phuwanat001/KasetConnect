@@ -10,15 +10,21 @@ import {
   CheckCircle,
   XCircle,
   AlertCircle,
+  ArrowRight,
+  FileText,
 } from "lucide-react";
 
-import type { BookingsData, Booking } from "../../lib/types";
+import type { BookingsData, Booking, BookingStatus } from "../../lib/types";
 
 interface BookingCalendarViewProps {
   data: BookingsData;
+  onViewBooking?: (id: string) => void;
 }
 
-export function BookingCalendarView({ data }: BookingCalendarViewProps) {
+export function BookingCalendarView({
+  data,
+  onViewBooking,
+}: BookingCalendarViewProps) {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedBooking, setSelectedBooking] = useState<Booking | null>(null);
 
@@ -65,10 +71,47 @@ export function BookingCalendarView({ data }: BookingCalendarViewProps) {
       .split("T")[0];
 
     return data.bookings.filter((booking) => {
-      // Simple check if date is within range
-      // In a real app, handle timezone carefully
       return booking.startDate <= dateStr && booking.endDate >= dateStr;
     });
+  };
+
+  const getStatusColor = (status: BookingStatus) => {
+    switch (status) {
+      case "pending_payment":
+        return "bg-amber-100 text-amber-800 border-amber-500 dark:bg-amber-900/30 dark:text-amber-300";
+      case "payment_verification":
+        return "bg-blue-100 text-blue-800 border-blue-500 dark:bg-blue-900/30 dark:text-blue-300";
+      case "confirmed":
+        return "bg-emerald-100 text-emerald-800 border-emerald-500 dark:bg-emerald-900/30 dark:text-emerald-300";
+      case "in_progress":
+        return "bg-purple-100 text-purple-800 border-purple-500 dark:bg-purple-900/30 dark:text-purple-300";
+      case "cancelled":
+      case "rejected":
+        return "bg-red-100 text-red-800 border-red-500 dark:bg-red-900/30 dark:text-red-300";
+      default:
+        return "bg-slate-100 text-slate-600 border-slate-400 dark:bg-slate-800 dark:text-slate-400";
+    }
+  };
+
+  const getStatusLabel = (status: BookingStatus) => {
+    switch (status) {
+      case "pending_payment":
+        return "รอชำระเงิน";
+      case "payment_verification":
+        return "รอตรวจสอบ";
+      case "confirmed":
+        return "ยืนยันแล้ว";
+      case "in_progress":
+        return "กำลังใช้งาน";
+      case "completed":
+        return "เสร็จสิ้น";
+      case "cancelled":
+        return "ยกเลิก";
+      case "rejected":
+        return "ปฏิเสธ";
+      default:
+        return status;
+    }
   };
 
   return (
@@ -146,7 +189,7 @@ export function BookingCalendarView({ data }: BookingCalendarViewProps) {
                   isCurrentDay ? "bg-blue-50/50 dark:bg-blue-900/10" : ""
                 }`}
                 onClick={() => {
-                  /* Maybe open day summary */
+                  // setSelectedDay(day)...
                 }}
               >
                 <span
@@ -167,22 +210,15 @@ export function BookingCalendarView({ data }: BookingCalendarViewProps) {
                         e.stopPropagation();
                         setSelectedBooking(booking);
                       }}
-                      className={`text-xs px-1.5 py-1 rounded truncate text-left border-l-2 transition-all hover:brightness-95 w-full ${
-                        booking.status === "confirmed"
-                          ? "bg-emerald-100 text-emerald-800 border-emerald-500 dark:bg-emerald-900/30 dark:text-emerald-300"
-                          : booking.status === "pending"
-                            ? "bg-amber-100 text-amber-800 border-amber-500 dark:bg-amber-900/30 dark:text-amber-300"
-                            : booking.status === "in_progress"
-                              ? "bg-purple-100 text-purple-800 border-purple-500 dark:bg-purple-900/30 dark:text-purple-300"
-                              : "bg-slate-100 text-slate-600 border-slate-400 dark:bg-slate-800 dark:text-slate-400"
-                      }`}
+                      className={`text-xs px-1.5 py-1 rounded truncate text-left border-l-2 transition-all hover:brightness-95 w-full ${getStatusColor(booking.status)}`}
                     >
-                      {booking.status === "pending" && "⏳ "}
+                      {booking.status === "pending_payment" && "⏳ "}
+                      {booking.status === "payment_verification" && "📝 "}
                       {booking.customerName}
                     </button>
                   ))}
                   {dayBookings.length === 0 && (
-                    <div className="flex-1" /> /* Spacer to keep grid regular */
+                    <div className="flex-1" /> /* Spacer */
                   )}
                 </div>
               </div>
@@ -216,37 +252,12 @@ export function BookingCalendarView({ data }: BookingCalendarViewProps) {
                   <h4 className="font-bold text-slate-900 dark:text-white leading-tight">
                     {selectedBooking.productName}
                   </h4>
-                  <div
-                    className={`inline-flex items-center gap-1.5 mt-1.5 px-2 py-0.5 rounded-full text-xs font-medium ${
-                      selectedBooking.status === "confirmed"
-                        ? "bg-emerald-100 text-emerald-700"
-                        : selectedBooking.status === "pending"
-                          ? "bg-amber-100 text-amber-700"
-                          : selectedBooking.status === "cancelled"
-                            ? "bg-red-100 text-red-700"
-                            : "bg-slate-100 text-slate-700"
-                    }`}
-                  >
+                  <div className="mt-2 text-xs font-medium">
                     <span
-                      className={`w-1.5 h-1.5 rounded-full ${
-                        selectedBooking.status === "confirmed"
-                          ? "bg-emerald-500"
-                          : selectedBooking.status === "pending"
-                            ? "bg-amber-500"
-                            : selectedBooking.status === "cancelled"
-                              ? "bg-red-500"
-                              : "bg-slate-500"
-                      }`}
-                    />
-                    {selectedBooking.status === "confirmed"
-                      ? "ยืนยันแล้ว"
-                      : selectedBooking.status === "pending"
-                        ? "รออนุมัติ"
-                        : selectedBooking.status === "cancelled"
-                          ? "ยกเลิกแล้ว"
-                          : selectedBooking.status === "in_progress"
-                            ? "กำลังดำเนินการ"
-                            : "เสร็จสิ้น"}
+                      className={`px-2 py-0.5 rounded-md border ${getStatusColor(selectedBooking.status)}`}
+                    >
+                      {getStatusLabel(selectedBooking.status)}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -280,11 +291,6 @@ export function BookingCalendarView({ data }: BookingCalendarViewProps) {
                         { dateStyle: "long" },
                       )}
                     </p>
-                    {selectedBooking.notes && (
-                      <p className="text-xs text-slate-500 mt-1 italic">
-                        "{selectedBooking.notes}"
-                      </p>
-                    )}
                   </div>
                 </div>
               </div>
@@ -298,23 +304,13 @@ export function BookingCalendarView({ data }: BookingCalendarViewProps) {
 
               {/* Action Buttons */}
               <div className="mt-auto pt-4 flex flex-col gap-2">
-                {selectedBooking.status === "pending" && (
-                  <>
-                    <button className="w-full flex items-center justify-center gap-2 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-medium transition-colors">
-                      <CheckCircle className="w-4 h-4" />
-                      อนุมัติการจอง
-                    </button>
-                    <button className="w-full flex items-center justify-center gap-2 py-2.5 bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 rounded-xl font-medium transition-colors">
-                      <XCircle className="w-4 h-4" />
-                      ปฏิเสธ
-                    </button>
-                  </>
-                )}
-                {selectedBooking.status === "confirmed" && (
-                  <button className="w-full flex items-center justify-center gap-2 py-2.5 bg-purple-500 hover:bg-purple-600 text-white rounded-xl font-medium transition-colors">
-                    เริ่มงาน
-                  </button>
-                )}
+                <button
+                  onClick={() => onViewBooking?.(selectedBooking.id)}
+                  className="w-full flex items-center justify-center gap-2 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl font-medium transition-colors shadow-lg shadow-slate-900/10"
+                >
+                  <FileText className="w-4 h-4" />
+                  ดูรายละเอียด & จัดการ
+                </button>
               </div>
             </div>
           ) : (
@@ -338,7 +334,13 @@ export function BookingCalendarView({ data }: BookingCalendarViewProps) {
             <div className="flex items-center gap-2">
               <span className="w-3 h-3 rounded-full bg-amber-500"></span>
               <span className="text-slate-600 dark:text-slate-400">
-                รออนุมัติ
+                รอชำระเงิน
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="w-3 h-3 rounded-full bg-blue-500"></span>
+              <span className="text-slate-600 dark:text-slate-400">
+                รอตรวจสอบสลิป
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -351,12 +353,6 @@ export function BookingCalendarView({ data }: BookingCalendarViewProps) {
               <span className="w-3 h-3 rounded-full bg-purple-500"></span>
               <span className="text-slate-600 dark:text-slate-400">
                 กำลังดำเนินการ
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="w-3 h-3 rounded-full bg-slate-300"></span>
-              <span className="text-slate-600 dark:text-slate-400">
-                เสร็จสิ้น
               </span>
             </div>
           </div>

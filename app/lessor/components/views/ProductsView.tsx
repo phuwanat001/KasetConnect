@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { toast } from "react-hot-toast";
 import {
   Plus,
   Search,
@@ -78,7 +79,10 @@ export function ProductsView({ data }: ProductsViewProps) {
               <List className="w-4 h-4" />
             </button>
           </div>
-          <button className="flex items-center gap-2 px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl text-sm font-medium transition-colors shadow-lg shadow-emerald-500/20">
+          <button
+            onClick={() => toast.success("ฟีเจอร์นี้จะเปิดให้ใช้งานเร็วๆ นี้")}
+            className="flex items-center gap-2 px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl text-sm font-medium transition-colors shadow-lg shadow-emerald-500/20"
+          >
             <Plus className="w-4 h-4" />
             <span className="hidden sm:inline">เพิ่มเครื่องจักร</span>
           </button>

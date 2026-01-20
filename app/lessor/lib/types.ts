@@ -32,11 +32,13 @@ export interface DashboardData {
 
 // Booking Types
 export type BookingStatus =
-  | "pending"
+  | "pending_payment"
+  | "payment_verification"
   | "confirmed"
   | "in_progress"
   | "completed"
-  | "cancelled";
+  | "cancelled"
+  | "rejected";
 
 export interface Booking {
   id: string;
@@ -50,6 +52,9 @@ export interface Booking {
   endDate: string;
   status: BookingStatus;
   totalPrice: number;
+  depositAmount: number;
+  paymentEvidence?: string; // URL to slip image
+  paymentTimestamp?: string;
   notes?: string;
   createdAt: string;
 }
@@ -57,11 +62,13 @@ export interface Booking {
 export interface BookingsData {
   bookings: Booking[];
   summary: {
-    pending: number;
+    pending_payment: number;
+    payment_verification: number;
     confirmed: number;
     inProgress: number;
     completed: number;
     cancelled: number;
+    rejected: number;
   };
 }
 
@@ -118,6 +125,8 @@ export interface Rental {
   status: RentalStatus;
   totalPrice: number;
   paidAmount: number;
+  depositAmount: number;
+  paymentEvidence?: string;
   paymentStatus: "pending" | "partial" | "paid";
   rating?: number;
   review?: string;
