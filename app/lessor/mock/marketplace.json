@@ -1,0 +1,82 @@
+{
+  "listings": [
+    {
+      "productId": "pd-001",
+      "productName": "Kubota L5018SP",
+      "productImage": "https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?w=400",
+      "isListed": true,
+      "isFeatured": true,
+      "views": 890,
+      "inquiries": 45,
+      "bookings": 24,
+      "conversionRate": 26.9,
+      "lastUpdated": "2026-01-15"
+    },
+    {
+      "productId": "pd-002",
+      "productName": "DJI Agras T40",
+      "productImage": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=400",
+      "isListed": true,
+      "isFeatured": true,
+      "views": 650,
+      "inquiries": 38,
+      "bookings": 18,
+      "conversionRate": 27.7,
+      "lastUpdated": "2026-01-18"
+    },
+    {
+      "productId": "pd-003",
+      "productName": "Kubota DC-70 Plus",
+      "productImage": "https://images.unsplash.com/photo-1530836369250-ef7208590169?w=400",
+      "isListed": true,
+      "isFeatured": false,
+      "views": 420,
+      "inquiries": 22,
+      "bookings": 12,
+      "conversionRate": 28.6,
+      "lastUpdated": "2026-01-10"
+    },
+    {
+      "productId": "pd-004",
+      "productName": "New Holland Baler",
+      "productImage": "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=400",
+      "isListed": true,
+      "isFeatured": false,
+      "views": 280,
+      "inquiries": 15,
+      "bookings": 8,
+      "conversionRate": 28.6,
+      "lastUpdated": "2026-01-05"
+    },
+    {
+      "productId": "pd-005",
+      "productName": "Kubota M7040",
+      "productImage": "https://images.unsplash.com/photo-1589923188900-85dae5233271?w=400",
+      "isListed": false,
+      "isFeatured": false,
+      "views": 200,
+      "inquiries": 10,
+      "bookings": 5,
+      "conversionRate": 25.0,
+      "lastUpdated": "2026-01-19"
+    },
+    {
+      "productId": "pd-006",
+      "productName": "เครื่องสูบน้ำ Honda WB30",
+      "productImage": "https://images.unsplash.com/photo-1625246333195-5819acf42d91?w=400",
+      "isListed": false,
+      "isFeatured": false,
+      "views": 120,
+      "inquiries": 5,
+      "bookings": 2,
+      "conversionRate": 16.7,
+      "lastUpdated": "2026-01-01"
+    }
+  ],
+  "summary": {
+    "totalListed": 4,
+    "totalFeatured": 2,
+    "totalViews": 2560,
+    "totalInquiries": 135
+  }
+}

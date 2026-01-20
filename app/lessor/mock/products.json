@@ -1,0 +1,144 @@
+{
+  "products": [
+    {
+      "id": "pd-001",
+      "name": "Kubota L5018SP",
+      "description": "รถแทรกเตอร์ Kubota รุ่น L5018SP เครื่องยนต์ 50 แรงม้า พร้อมอุปกรณ์ไถนาครบชุด สภาพดีมาก",
+      "category": "รถแทรกเตอร์",
+      "categoryId": "cat-001",
+      "price": 2500,
+      "priceUnit": "วัน",
+      "images": [
+        "https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?w=800",
+        "https://images.unsplash.com/photo-1589923188900-85dae5233271?w=800"
+      ],
+      "status": "active",
+      "isListed": true,
+      "isFeatured": true,
+      "rating": 4.8,
+      "reviewCount": 24,
+      "totalRentals": 45,
+      "totalViews": 890,
+      "createdAt": "2025-06-15",
+      "updatedAt": "2026-01-15"
+    },
+    {
+      "id": "pd-002",
+      "name": "DJI Agras T40",
+      "description": "โดรนเกษตรรุ่นใหม่ล่าสุด พ่นยาได้ 40 ลิตร/ไร่ พร้อมผู้ควบคุมมืออาชีพ",
+      "category": "โดรนเกษตร",
+      "categoryId": "cat-002",
+      "price": 1200,
+      "priceUnit": "ไร่",
+      "images": [
+        "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=800"
+      ],
+      "status": "active",
+      "isListed": true,
+      "isFeatured": true,
+      "rating": 5.0,
+      "reviewCount": 18,
+      "totalRentals": 32,
+      "totalViews": 650,
+      "createdAt": "2025-08-20",
+      "updatedAt": "2026-01-18"
+    },
+    {
+      "id": "pd-003",
+      "name": "Kubota DC-70 Plus",
+      "description": "รถเกี่ยวข้าว Kubota รุ่น DC-70 Plus เกี่ยวได้ 5-8 ไร่/ชม. พร้อมคนขับ",
+      "category": "รถเกี่ยวข้าว",
+      "categoryId": "cat-003",
+      "price": 500,
+      "priceUnit": "ไร่",
+      "images": [
+        "https://images.unsplash.com/photo-1530836369250-ef7208590169?w=800"
+      ],
+      "status": "active",
+      "isListed": true,
+      "isFeatured": false,
+      "rating": 4.5,
+      "reviewCount": 15,
+      "totalRentals": 28,
+      "totalViews": 420,
+      "createdAt": "2025-05-10",
+      "updatedAt": "2026-01-10"
+    },
+    {
+      "id": "pd-004",
+      "name": "New Holland Baler",
+      "description": "เครื่องอัดฟางรุ่นใหม่ อัดเป็นก้อนกลม ขนย้ายสะดวก",
+      "category": "อุปกรณ์เตรียมดิน",
+      "categoryId": "cat-004",
+      "price": 15,
+      "priceUnit": "ก้อน",
+      "images": [
+        "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=800"
+      ],
+      "status": "active",
+      "isListed": true,
+      "isFeatured": false,
+      "rating": 4.7,
+      "reviewCount": 12,
+      "totalRentals": 20,
+      "totalViews": 280,
+      "createdAt": "2025-09-01",
+      "updatedAt": "2026-01-05"
+    },
+    {
+      "id": "pd-005",
+      "name": "Kubota M7040",
+      "description": "รถแทรกเตอร์ขนาดกลาง 70 แรงม้า เหมาะสำหรับงานหนัก",
+      "category": "รถแทรกเตอร์",
+      "categoryId": "cat-001",
+      "price": 3500,
+      "priceUnit": "วัน",
+      "images": [
+        "https://images.unsplash.com/photo-1589923188900-85dae5233271?w=800"
+      ],
+      "status": "maintenance",
+      "isListed": false,
+      "isFeatured": false,
+      "rating": 4.6,
+      "reviewCount": 8,
+      "totalRentals": 15,
+      "totalViews": 200,
+      "createdAt": "2025-07-20",
+      "updatedAt": "2026-01-19"
+    },
+    {
+      "id": "pd-006",
+      "name": "เครื่องสูบน้ำ Honda WB30",
+      "description": "เครื่องสูบน้ำ Honda ขนาด 3 นิ้ว สูบได้ 1,000 ลิตร/นาที",
+      "category": "เครื่องสูบน้ำ",
+      "categoryId": "cat-005",
+      "price": 500,
+      "priceUnit": "วัน",
+      "images": [
+        "https://images.unsplash.com/photo-1625246333195-5819acf42d91?w=800"
+      ],
+      "status": "inactive",
+      "isListed": false,
+      "isFeatured": false,
+      "rating": 4.2,
+      "reviewCount": 5,
+      "totalRentals": 8,
+      "totalViews": 120,
+      "createdAt": "2025-10-15",
+      "updatedAt": "2026-01-01"
+    }
+  ],
+  "categories": [
+    { "id": "cat-001", "name": "รถแทรกเตอร์" },
+    { "id": "cat-002", "name": "โดรนเกษตร" },
+    { "id": "cat-003", "name": "รถเกี่ยวข้าว" },
+    { "id": "cat-004", "name": "อุปกรณ์เตรียมดิน" },
+    { "id": "cat-005", "name": "เครื่องสูบน้ำ" }
+  ],
+  "summary": {
+    "total": 6,
+    "active": 4,
+    "inactive": 1,
+    "maintenance": 1
+  }
+}

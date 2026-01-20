@@ -1,0 +1,78 @@
+{
+  "profile": {
+    "id": "ls-001",
+    "businessName": "สมชาย ฟาร์ม เซอร์วิส",
+    "ownerName": "สมชาย รักเกษตร",
+    "description": "บริการให้เช่าเครื่องจักรเกษตรครบวงจร ทั้งรถแทรกเตอร์ รถเกี่ยวข้าว โดรนเกษตร พร้อมพนักงานและคนขับมืออาชีพ ให้บริการทั่วภาคกลาง",
+    "avatar": "https://ui-avatars.com/api/?name=สมชาย&background=10b981&color=fff&size=200",
+    "coverImage": "https://images.unsplash.com/photo-1589923188900-85dae5233271?w=1200",
+    "email": "somchai.farm@gmail.com",
+    "phone": "081-234-5678",
+    "alternatePhone": "02-123-4567",
+    "address": "123 หมู่ 5 ต.กำแพงแสน",
+    "province": "นครปฐม",
+    "district": "กำแพงแสน",
+    "postalCode": "73140",
+    "serviceAreas": [
+      { "provinceId": "npt", "provinceName": "นครปฐม", "isActive": true },
+      { "provinceId": "spb", "provinceName": "สุพรรณบุรี", "isActive": true },
+      { "provinceId": "rch", "provinceName": "ราชบุรี", "isActive": true },
+      { "provinceId": "kbi", "provinceName": "กาญจนบุรี", "isActive": false },
+      { "provinceId": "ayu", "provinceName": "อยุธยา", "isActive": true }
+    ],
+    "operatingHours": [
+      {
+        "day": "จันทร์",
+        "isOpen": true,
+        "openTime": "06:00",
+        "closeTime": "18:00"
+      },
+      {
+        "day": "อังคาร",
+        "isOpen": true,
+        "openTime": "06:00",
+        "closeTime": "18:00"
+      },
+      {
+        "day": "พุธ",
+        "isOpen": true,
+        "openTime": "06:00",
+        "closeTime": "18:00"
+      },
+      {
+        "day": "พฤหัสบดี",
+        "isOpen": true,
+        "openTime": "06:00",
+        "closeTime": "18:00"
+      },
+      {
+        "day": "ศุกร์",
+        "isOpen": true,
+        "openTime": "06:00",
+        "closeTime": "18:00"
+      },
+      {
+        "day": "เสาร์",
+        "isOpen": true,
+        "openTime": "07:00",
+        "closeTime": "15:00"
+      },
+      { "day": "อาทิตย์", "isOpen": false, "openTime": "", "closeTime": "" }
+    ],
+    "isVerified": true,
+    "verificationStatus": "approved",
+    "verificationDocuments": [
+      "บัตรประชาชน",
+      "ทะเบียนบ้าน",
+      "หนังสือรับรองบริษัท"
+    ],
+    "bankName": "ธนาคารกสิกรไทย",
+    "bankAccountNumber": "xxx-x-xxxxx-x",
+    "bankAccountName": "นาย สมชาย รักเกษตร",
+    "rating": 4.8,
+    "reviewCount": 67,
+    "totalProducts": 6,
+    "totalRentals": 148,
+    "memberSince": "2024-03-15"
+  }
+}

@@ -2,18 +2,15 @@ import type { Metadata } from "next";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "KasetConnect",
-  description: "Connect with Kasetsart University community ",
+  title: "KasetLessor - ระบบจัดการร้านค้าเครื่องจักร",
+  description:
+    "ระบบจัดการร้านค้า การจอง และเครื่องจักรสำหรับผู้ให้เช่า KasetConnect",
 };
 
-export default function RootLayout({
+export default function LessorRootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
+  return <div className="antialiased font-sans">{children}</div>;
 }

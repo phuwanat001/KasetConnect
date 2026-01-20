@@ -1,0 +1,95 @@
+{
+  "stats": {
+    "totalProducts": 12,
+    "activeRentals": 5,
+    "monthlyRevenue": 125000,
+    "pendingBookings": 3,
+    "totalViews": 1250,
+    "completedRentals": 48
+  },
+  "recentBookings": [
+    {
+      "id": "bk-001",
+      "productId": "pd-001",
+      "productName": "Kubota L5018SP",
+      "productImage": "https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?w=400",
+      "customerName": "สมชาย ใจดี",
+      "customerPhone": "081-234-5678",
+      "startDate": "2026-01-25",
+      "endDate": "2026-01-27",
+      "status": "pending",
+      "totalPrice": 7500,
+      "createdAt": "2026-01-20T10:30:00"
+    },
+    {
+      "id": "bk-002",
+      "productId": "pd-002",
+      "productName": "DJI Agras T40",
+      "productImage": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=400",
+      "customerName": "มานี รักเกษตร",
+      "customerPhone": "089-876-5432",
+      "startDate": "2026-01-22",
+      "endDate": "2026-01-22",
+      "status": "confirmed",
+      "totalPrice": 3600,
+      "createdAt": "2026-01-19T14:20:00"
+    },
+    {
+      "id": "bk-003",
+      "productId": "pd-003",
+      "productName": "Kubota DC-70 Plus",
+      "productImage": "https://images.unsplash.com/photo-1530836369250-ef7208590169?w=400",
+      "customerName": "ประยุทธ์ นาข้าว",
+      "customerPhone": "082-345-6789",
+      "startDate": "2026-01-21",
+      "endDate": "2026-01-23",
+      "status": "in_progress",
+      "totalPrice": 15000,
+      "createdAt": "2026-01-18T09:15:00"
+    },
+    {
+      "id": "bk-004",
+      "productId": "pd-001",
+      "productName": "Kubota L5018SP",
+      "productImage": "https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?w=400",
+      "customerName": "วิชัย ไร่นา",
+      "customerPhone": "086-111-2222",
+      "startDate": "2026-01-28",
+      "endDate": "2026-01-30",
+      "status": "pending",
+      "totalPrice": 7500,
+      "createdAt": "2026-01-20T08:00:00"
+    }
+  ],
+  "revenueChart": [
+    { "month": "ส.ค.", "revenue": 85000 },
+    { "month": "ก.ย.", "revenue": 92000 },
+    { "month": "ต.ค.", "revenue": 78000 },
+    { "month": "พ.ย.", "revenue": 110000 },
+    { "month": "ธ.ค.", "revenue": 145000 },
+    { "month": "ม.ค.", "revenue": 125000 }
+  ],
+  "topProducts": [
+    {
+      "id": "pd-001",
+      "name": "Kubota L5018SP",
+      "totalRentals": 24,
+      "totalViews": 450,
+      "rating": 4.8
+    },
+    {
+      "id": "pd-002",
+      "name": "DJI Agras T40",
+      "totalRentals": 18,
+      "totalViews": 380,
+      "rating": 5.0
+    },
+    {
+      "id": "pd-003",
+      "name": "Kubota DC-70 Plus",
+      "totalRentals": 12,
+      "totalViews": 290,
+      "rating": 4.5
+    }
+  ]
+}
